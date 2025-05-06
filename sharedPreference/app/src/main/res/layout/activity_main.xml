@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:text="Shared Preferences"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+android:id="@+id/edtClave"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="100dp"
+android:layout_marginTop="53dp"
+android:ems="10"
+android:inputType="text"
+android:text="Name"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+<EditText
+android:id="@+id/edtValor"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="100dp"
+android:layout_marginTop="29dp"
+android:ems="10"
+android:inputType="text"
+android:text="Name"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/edtClave" />
+
+<Button
+android:id="@+id/btnGuardar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="80dp"
+android:layout_marginTop="76dp"
+android:text="Guardar"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+<Button
+android:id="@+id/btnMostrar"
+android:layout_width="103dp"
+android:layout_height="51dp"
+android:layout_marginStart="68dp"
+android:layout_marginTop="76dp"
+android:text="Mostrar"
+app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+<TextView
+android:id="@+id/tvSalida"
+android:layout_width="278dp"
+android:layout_height="155dp"
+android:layout_marginStart="80dp"
+android:layout_marginTop="40dp"
+android:text="TextView"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/btnMostrar" />
+
+<Button
+android:id="@+id/btnSalir"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_marginEnd="52dp"
+android:text="Salir"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/tvSalida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
