@@ -29,23 +29,23 @@ android:layout_marginStart="100dp"
 android:layout_marginTop="53dp"
 android:ems="10"
 android:inputType="text"
-android:text="Name"
+android:hint="Name"
 app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
-<EditText
-android:id="@+id/edtValor"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginStart="100dp"
-android:layout_marginTop="29dp"
-android:ems="10"
-android:inputType="text"
-android:text="Name"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/edtClave" />
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtClave" />
 
-<Button
+    <Button
 android:id="@+id/btnGuardar"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
@@ -65,17 +65,19 @@ android:text="Mostrar"
 app:layout_constraintStart_toEndOf="@+id/btnGuardar"
 app:layout_constraintTop_toBottomOf="@+id/edtValor" />
 
-<TextView
-android:id="@+id/tvSalida"
-android:layout_width="278dp"
-android:layout_height="155dp"
-android:layout_marginStart="80dp"
-android:layout_marginTop="40dp"
-android:text="TextView"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/btnMostrar" />
+    <TextView
+        android:id="@+id/tvSalida"
+        android:layout_width="278dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:hint="Nothing to show"
+        android:textSize="19sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrar" />
 
-<Button
+    <Button
 android:id="@+id/btnSalir"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"

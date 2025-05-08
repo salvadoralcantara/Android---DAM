@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Inicializar los elementos de la interfaz
+        // Inicializacion de los elementos de la interfaz
         btguardar = findViewById(R.id.btnGuardar);
         btmonstrar = findViewById(R.id.btnMostrar);
         btsalir = findViewById(R.id.btnSalir);
@@ -41,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
         etvalor = findViewById(R.id.edtValor);
         tvsalida = findViewById(R.id.tvSalida);
 
-        // Guardar en SharedPreferences
+        // Guarda en SharedPreferences
         btguardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences configuracion =
-                        getSharedPreferences("preferences", Context.MODE_PRIVATE);
+                SharedPreferences configuracion = getSharedPreferences("preferences", Context.MODE_PRIVATE);
                 String clave = etclave.getText().toString();
                 String valor = etvalor.getText().toString();
+
                 SharedPreferences.Editor editorpref = configuracion.edit();
                 editorpref.putString(clave, valor);
                 editorpref.apply();
@@ -60,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
         btmonstrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences preferencias =
-                        getSharedPreferences("preferences", Context.MODE_PRIVATE);
+                SharedPreferences preferencias = getSharedPreferences("preferences", Context.MODE_PRIVATE);
                 String clave = etclave.getText().toString();
                 String valor = preferencias.getString(clave, "No existen las preferencias");
+
                 tvsalida.setText("Clave: " + clave + "\nValor: " + valor);
             }
         });
