@@ -33,13 +33,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
+        android:contextClickable="true"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
+
         <LinearLayout
             android:id="@+id/Departamentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMensajeInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="No hay datos cargados"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
     </ScrollView>
+
+
+    <Button
+        android:id="@+id/btSalir"
+        android:layout_width="101dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btCargar"
+        app:layout_constraintTop_toBottomOf="@+id/lstDepartaemntos"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/btCargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="60dp"
+        android:text="Cargar XML"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstDepartaemntos"
+        tools:ignore="HardcodedText"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

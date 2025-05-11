@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "sv.edu.ues.usoxml"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "sv.edu.ues.usoxml"

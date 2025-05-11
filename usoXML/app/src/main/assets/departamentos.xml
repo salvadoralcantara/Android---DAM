@@ -1,0 +1,58 @@
+<departamentos>
+    <departamento>
+        <id>01</id>
+        <nombre>Ahuachapán</nombre>
+    </departamento>
+    <departamento>
+        <id>02</id>
+        <nombre>Santa Ana</nombre>
+    </departamento>
+    <departamento>
+        <id>03</id>
+        <nombre>Sonsonate</nombre>
+    </departamento>
+    <departamento>
+        <id>04</id>
+        <nombre>Chalatenango</nombre>
+    </departamento>
+    <departamento>
+        <id>05</id>
+        <nombre>La Libertad</nombre>
+    </departamento>
+    <departamento>
+        <id>06</id>
+        <nombre>San Salvador</nombre>
+    </departamento>
+    <departamento>
+        <id>07</id>
+        <nombre>Cuscatlán</nombre>
+    </departamento>
+    <departamento>
+        <id>08</id>
+        <nombre>La Paz</nombre>
+    </departamento>
+    <departamento>
+        <id>09</id>
+        <nombre>Cabañas</nombre>
+    </departamento>
+    <departamento>
+        <id>10</id>
+        <nombre>San Vicente</nombre>
+    </departamento>
+    <departamento>
+        <id>11</id>
+        <nombre>Usulután</nombre>
+    </departamento>
+    <departamento>
+        <id>12</id>
+        <nombre>San Miguel</nombre>
+    </departamento>
+    <departamento>
+        <id>13</id>
+        <nombre>Morazán</nombre>
+    </departamento>
+    <departamento>
+        <id>14</id>
+        <nombre>La Unión</nombre>
+    </departamento>
+</departamentos>
